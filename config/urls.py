@@ -20,7 +20,9 @@ from myapp import views
 
 
 urlpatterns = [
-    re_path('^callback', views.callback),
+    #re_path('^callback', views.callback),
+    path('/', views.callback),
+    path('callback/', views.callback),
     path('admin/', admin.site.urls),
 ]
 
